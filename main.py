@@ -19,9 +19,10 @@ def ellipse(tid, centrum, a, b,vinkelhastighed, fase=0):
 def baner(delta_tid):
     arcade.start_render()
     x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 70, 47, 2)
-    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 107, 108.9, 0.78)
-    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 147.570, 152.1, 0.48)
-    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 206, 249, 0.24)
+    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 108.9, 107, 0.78)
+    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 152.1, 147.1, 0.48)
+    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 249, 206, 0.24)
+    #Solen
     arcade.draw_circle_filled(625, 325, 26.927, arcade.color.YELLOW)
     #Merkur
     arcade.draw_circle_filled(x, y, 4.879, arcade.color.GRAY)
