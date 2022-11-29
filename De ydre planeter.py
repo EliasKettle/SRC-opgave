@@ -18,10 +18,10 @@ def ellipse(tid, centrum, a, b,vinkelhastighed, fase=0):
 
 def baner(delta_tid):
     arcade.start_render()
-    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 74.1, 81.7, 2)
-    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 140, 150, 0.78)
-    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 300.639, 273.556, 0.48)
-    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 453.687, 445.963, 0.24)
+    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 74.1, 81.7, 3)
+    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 140, 150, 1.2)
+    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 300.639, 273.556, 0.42)
+    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 453.687, 445.963, 0.21)
     #Solen
     arcade.draw_circle_filled(625, 325, 26.927, arcade.color.YELLOW)
     #Saturns ringe
