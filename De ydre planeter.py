@@ -23,7 +23,7 @@ def baner(delta_tid):
     x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 300.639, 273.556, 0.42)
     x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 453.687, 445.963, 0.21)
     #Solen
-    arcade.draw_circle_filled(625, 325, 26.927, arcade.color.YELLOW)
+    arcade.draw_circle_filled(625, 325, 27.854, arcade.color.YELLOW)
     #Saturns ringe
     arcade.draw_circle_outline(x_2, y_2, 15, arcade.color.NAVAJO_WHITE, 1.82)
     #Jupiter

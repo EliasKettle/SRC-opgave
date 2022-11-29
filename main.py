@@ -23,7 +23,7 @@ def baner(delta_tid):
     x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 152.1, 147.1, 0.48)
     x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 249, 206, 0.24)
     #Solen
-    arcade.draw_circle_filled(625, 325, 26.927, arcade.color.YELLOW)
+    arcade.draw_circle_filled(625, 325, 27.854, arcade.color.YELLOW)
     #Merkur
     arcade.draw_circle_filled(x, y, 4.879, arcade.color.GRAY)
     #Venus
