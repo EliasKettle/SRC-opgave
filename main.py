@@ -7,7 +7,7 @@ SPORLAENGDE = 50
 
 
 
-def ellipse(tid, centrum, a, b,vinkelhastighed, fase=0):
+def ellipse(tid, centrum, a, b, vinkelhastighed, fase=0):
     x_c, y_c = centrum
     x = x_c + a * math.cos(vinkelhastighed * tid + fase)
     y = y_c + b * math.sin(vinkelhastighed * tid + fase)
