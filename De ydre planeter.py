@@ -34,7 +34,7 @@ def baner(delta_tid):
     #Rotation i Uranus
     x_7, y_7 = cirkel_linje(baner.tid, (x_3, y_3), 5.724, -18136.9, 0)
     #Rotation i Neptun
-    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 4.9244, 19138.11)
+    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 4.9244, 19138.11, 0)
     #Solen
     arcade.draw_circle_filled(625, 325, 27.854, arcade.color.YELLOW)
     #Saturns ringe
