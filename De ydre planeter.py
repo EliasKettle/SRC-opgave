@@ -26,19 +26,19 @@ def baner(delta_tid):
     x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 75.4927, 83.0927, 3)
     x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 141.3927, 151.3927, 1.2)
     x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 302.0317, 274.9487, 0.42)
-    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 455.0797, 447.3557, 0.21)
+    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 455.0797, 447.3557, 0.22)
     #Rotation i Jupiter
     x_5, y_5 = cirkel_linje(baner.tid, (x, y), 13.982, 30925.93, 0)
     #Rotation i Saturn
-    x_6, y_6 = cirkel_linje(baner.tid, (x_2, y_2), 11.646, 28049.14, 0)
+    x_6, y_6 = cirkel_linje(baner.tid, (x_2, y_2), 11.646, 28669.09, 0)
     #Rotation i Uranus
-    x_7, y_7 = cirkel_linje(baner.tid, (x_3, y_3), 5.724, -18136.9, 0)
+    x_7, y_7 = cirkel_linje(baner.tid, (x_3, y_3), 5.724, -18550.59, 0)
     #Rotation i Neptun
-    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 4.9244, 19138.11, 0)
+    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 4.9244, 19710, 0)
     #Solen
     arcade.draw_circle_filled(625, 325, 27.854, arcade.color.YELLOW)
     #Saturns ringe
-    arcade.draw_circle_outline(x_2, y_2, 15, arcade.color.NAVAJO_WHITE, 1.82)
+    arcade.draw_circle_outline(x_2, y_2, 15, arcade.color.SANDY_BROWN, 1.82)
     #Jupiter
     arcade.draw_circle_filled(x, y, 13.982, arcade.color.WHITE)
     #Radius i Jupiter

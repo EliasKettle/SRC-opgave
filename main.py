@@ -26,20 +26,20 @@ def baner(delta_tid):
     arcade.start_render()
     x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 83.927, 60.927, 2)
     x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 122.827, 120.927, 0.78)
-    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 166.027, 163.927, 0.48)
+    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 166.027, 161.027, 0.48)
     x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 262.927, 219.927, 0.24)
     #Rotation i Merkur
-    x_5, y_5 = cirkel_linje(baner.tid, (x, y), 4.879, 3, 0)
+    x_5, y_5 = cirkel_linje(baner.tid, (x, y), 4.878, 2, 0)
     #Rotation i Venus
-    x_6, y_6 = cirkel_linje(baner.tid, (x_2, y_2), 12.104, -0.72, 0)
+    x_6, y_6 = cirkel_linje(baner.tid, (x_2, y_2), 12.104, -0.48, 0)
     #Rotaion i Jorden
-    x_7, y_7 = cirkel_linje(baner.tid, (x_3, y_3), 12.742, 175.2, 0)
+    x_7, y_7 = cirkel_linje(baner.tid, (x_3, y_3), 12.742, 117.3, 0)
     #Rotation i Mars
-    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 6.787, 162.4, 0)
+    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 6.787, 78.2, 0)
     #Solen
     arcade.draw_circle_filled(625, 325, 27.854, arcade.color.YELLOW)
     #Merkur
-    arcade.draw_circle_filled(x, y, 4.879, arcade.color.GRAY)
+    arcade.draw_circle_filled(x, y, 4.878, arcade.color.GRAY)
     #Radius i Merkur
     arcade.draw_line(x_5, y_5, x, y, arcade.color.RED)
     #Venus
