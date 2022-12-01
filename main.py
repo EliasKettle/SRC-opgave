@@ -24,10 +24,10 @@ def cirkel_linje(tid, centrum, radius, vinkelhastighed, fase=0):
 
 def baner(delta_tid):
     arcade.start_render()
-    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 70, 47, 2)
-    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 108.9, 107, 0.78)
-    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 152.1, 147.1, 0.48)
-    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 249, 206, 0.24)
+    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 71.3927, 48.3927, 2)
+    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 110.2927, 108.3927, 0.78)
+    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 153.4927, 150.3927, 0.48)
+    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 249.3927, 206.3927, 0.24)
     #Rotation i Merkur
     x_5, y_5 = cirkel_linje(baner.tid, (x, y), 4.879, 3, 0)
     #Rotation i Venus

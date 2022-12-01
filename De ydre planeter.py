@@ -23,10 +23,10 @@ def cirkel_linje(tid, centrum, radius, vinkelhastighed, fase=0):
 
 def baner(delta_tid):
     arcade.start_render()
-    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 74.1, 81.7, 3)
-    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 140, 150, 1.2)
-    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 300.639, 273.556, 0.42)
-    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 453.687, 445.963, 0.21)
+    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 88.027, 95.627, 3)
+    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 153.927, 163.927, 1.2)
+    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 314.566, 287.483, 0.42)
+    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 467.614, 459.927, 0.21)
     #Rotation i Jupiter
     x_5, y_5 = cirkel_linje(baner.tid, (x, y), 13.982, 30925.93, 0)
     #Rotation i Saturn
