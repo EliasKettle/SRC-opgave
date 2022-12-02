@@ -28,13 +28,13 @@ def baner(delta_tid):
     x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 302.0317, 274.9487, 0.42)
     x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 455.0797, 447.3557, 0.22)
     #Rotation i Jupiter
-    x_5, y_5 = cirkel_linje(baner.tid, (x, y), 13.982, 30925.93, 0)
+    x_5, y_5 = cirkel_linje(baner.tid, (x, y), 13.982, 31536, 0)
     #Rotation i Saturn
-    x_6, y_6 = cirkel_linje(baner.tid, (x_2, y_2), 11.646, 28669.09, 0)
+    x_6, y_6 = cirkel_linje(baner.tid, (x_2, y_2), 11.646, 27713.46, 0)
     #Rotation i Uranus
-    x_7, y_7 = cirkel_linje(baner.tid, (x_3, y_3), 5.724, -18550.59, 0)
+    x_7, y_7 = cirkel_linje(baner.tid, (x_3, y_3), 5.724, -18179.58, 0)
     #Rotation i Neptun
-    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 4.9244, 19710, 0)
+    x_8, y_8 = cirkel_linje(baner.tid, (x_4, y_4), 4.9244, 19874.25, 0)
     #Solen
     arcade.draw_circle_filled(625, 325, 27.854, arcade.color.YELLOW)
     #Saturns ringe
