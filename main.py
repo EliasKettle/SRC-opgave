@@ -25,10 +25,10 @@ def cirkel_linje(tid, centrum, radius, vinkelhastighed, fase=0):
 def baner(delta_tid):
     arcade.start_render()
     #Baner om solen bliver udregnet
-    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 83.927, 60.927, 2)
-    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 122.827, 120.927, 0.78)
-    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 166.027, 161.027, 0.48)
-    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 262.927, 219.927, 0.24)
+    x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 97.854, 74.854, 2)
+    x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 135.854, 134.854, 0.78)
+    x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 179.954, 174.954, 0.48)
+    x_4, y_4 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 276.854, 233.854, 0.24)
     #Rotation i Merkur
     x_5, y_5 = cirkel_linje(baner.tid, (x, y), 4.878, 3, 0)
     #Rotation i Venus
