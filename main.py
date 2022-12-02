@@ -24,6 +24,7 @@ def cirkel_linje(tid, centrum, radius, vinkelhastighed, fase=0):
 
 def baner(delta_tid):
     arcade.start_render()
+    #Baner om solen bliver udregnet
     x, y = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 83.927, 60.927, 2)
     x_2, y_2 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 122.827, 120.927, 0.78)
     x_3, y_3 = ellipse(baner.tid, (BREDDE / 2, HOEJDE / 2), 166.027, 161.027, 0.48)
@@ -55,7 +56,7 @@ def baner(delta_tid):
     #Radius i Mars
     arcade.draw_line(x_8, y_8, x_4, y_4, arcade.color.WHITE)
 
-
+    #Tjekker om sporet er for langt
     if len(baner.spor) > SPORLAENGDE:
         baner.spor.pop(0)
 
@@ -68,6 +69,7 @@ def baner(delta_tid):
     if len(baner.spor4) > SPORLAENGDE:
         baner.spor4.pop(0)
 
+    #Tegner punkterne i sporerne
     for punkt in baner.spor:
         arcade.draw_circle_filled(*punkt, 2, arcade.color.GRAY)
     for punkt in baner.spor2:
@@ -76,7 +78,9 @@ def baner(delta_tid):
         arcade.draw_circle_filled(*punkt, 2, arcade.color.BLUE)
     for punkt in baner.spor4:
         arcade.draw_circle_filled(*punkt, 2, arcade.color.RED)
+    #Opdateres over tid
     baner.tid += delta_tid
+    #Tilføjer nyt punkt i listen efter det sidste bliver fjernet
     baner.spor.append((x, y))
     baner.spor2.append((x_2, y_2))
     baner.spor3.append((x_3, y_3))
@@ -84,12 +88,14 @@ def baner(delta_tid):
 def main():
     arcade.open_window(BREDDE, HOEJDE, "De indre planeter")
     arcade.set_background_color(arcade.csscolor.BLACK)
-
+    #Planeterne starter med tiden 0.0
     baner.tid = 0.0
+    #Listerner over sporet bliver genereret
     baner.spor = list()
     baner.spor2 = list()
     baner.spor3 = list()
     baner.spor4 = list()
+    #Skal opdatere hvert 1/60 sekund
     arcade.schedule(baner, 1 / 60)
 
     arcade.run()
